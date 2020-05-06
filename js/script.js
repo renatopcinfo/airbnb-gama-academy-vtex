@@ -7,7 +7,6 @@ fetch(api)
   })
   .catch(error => console.error(error))
 
-
 function getPhotos(places) {
 
   let renderPhotos = [];
@@ -16,11 +15,13 @@ function getPhotos(places) {
     renderPhotos += '<div class="list-cards">'
     renderPhotos += `<img src='${places[i].photo}' alt="${places[i].name}"`;
     renderPhotos += `<p class="type"> ${places[i].property_type} </p>`;
-    renderPhotos += `<h2> ${places[i].name} </h2>`;
+    renderPhotos += `<h2> ${places[i].name.toLowerCase()} </h2>`;
     renderPhotos += `<p><span> R$${places[i].price} </span></p>`;
     renderPhotos += '</div>'
   }
   document.querySelector('.cards').innerHTML = renderPhotos;
 
 }
+
+
 
