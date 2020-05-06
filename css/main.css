@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+
+.home h1 {
+	font-family: 'Roboto', sans-serif;
+	color: #FF385C;
+	font-size: 32px;
+	font-weight: 700;
+	padding: 20px;
+}
+
+.home .cards{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.home .cards .list-cards{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 25%;
+	align-items: center;
+  margin-top: 10px;
+}
+
+.home .cards .list-cards img{
+	border-radius: 5px;
+	height: 285px;
+	width: 310px;
+	object-fit: cover;
+}
+
+.home .cards .list-cards h2{
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 15px 0 0 0;
+	text-transform: capitalize;
+}
+
+.home .cards .list-cards p{
+	color: #FF385C;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 900;
+  padding-top: 5px; 
+}
+
+.home .cards .list-cards p.type{
+  color: black;
+  margin-top: 5px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+}
