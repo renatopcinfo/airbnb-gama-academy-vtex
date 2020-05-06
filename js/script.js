@@ -16,7 +16,7 @@ function getPhotos(places) {
     renderPhotos += `<img src='${places[i].photo}' alt="${places[i].name}"`;
     renderPhotos += `<p class="type"> ${places[i].property_type} </p>`;
     renderPhotos += `<h2> ${places[i].name.toLowerCase()} </h2>`;
-    renderPhotos += `<p><span> R$${places[i].price} </span></p>`;
+    renderPhotos += `<p><span> R$${places[i].price},00 </span></p>`;
     renderPhotos += '</div>'
   }
   document.querySelector('.cards').innerHTML = renderPhotos;
