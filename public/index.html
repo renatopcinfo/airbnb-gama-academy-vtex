@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="../css/normalize.css" />
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="shortcut icon" href="../img/favicon.ico" />
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
 </head>
 
 <body>
@@ -50,8 +51,7 @@
         <a class="btn btn-outline-danger rounded-pill" onclick="sortDataType()">Tipo</a>
         <a class="btn btn-outline-danger rounded-pill" onclick="sortDataPriceMin()">Menor Valor</a>
         <a class="btn btn-outline-danger rounded-pill" onclick="sortDataPriceMax()">Maior Valor</a>
-        <input id="searchInput" class="info__orders--button" onkeyup="handleSearch()" placeholder="Pesquise seu imóvel">
-
+        <input id="searchInput" class="bnt-search" onkeyup="handleSearch()" placeholder="Pesquise seu imóvel">
       </div>
       <div class="cards">
       </div>
@@ -78,15 +78,19 @@
 
     <footer class="container-fluid text-center bg-footer margin">
       <ul class="contact">
-        <li><a href="https://www.linkedin.com/in/renatoor/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/renatopcinfo" target="_blank">GitHub</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/renatoor/" target="_blank">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="https://github.com/renatopcinfo" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </li>
       </ul>
       <span>&copy; Copyright 2020 - Desenvolvido por Renato Rodrigues</span>
     </footer>
   </div>
 
-
-  <script src="https://use.fontawesome.com/13d5203aad.js"></script>
   <script type="text/javascript" src="../js/script.js"></script>
 </body>
 

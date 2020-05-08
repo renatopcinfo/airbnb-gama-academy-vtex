@@ -8,17 +8,17 @@
 	color: black;		
 }
 
-
-
 .btn-locations {
 	margin-bottom: 30px;
 }
 
-/* .btn-outline-danger a {
-	color: #e6727d;
-	border-color: #df8790;
-} */
-
+.bnt-search{	
+	margin-left: 10px;
+	width: max-content;
+	border: 1px solid rgba(109, 31, 31, 0.2);
+	border-radius: 30px;
+	padding: 8px 16px;
+}
 .cards {
  display: flex; 
  cursor: pointer; 
@@ -122,6 +122,7 @@ a.info:hover {
 	align-items: flex-end;
 	list-style: none;
 	text-decoration: none;
+	
 }
 
 .contact li a{
