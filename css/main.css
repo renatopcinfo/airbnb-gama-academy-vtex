@@ -12,7 +12,7 @@
 	margin-bottom: 30px;
 }
 
-.bnt-search{	
+.bnt-search{
 	margin-left: 10px;
 	width: max-content;
 	border: 2px solid rgba(109, 31, 31, 0.2);
@@ -20,12 +20,6 @@
 	padding: 8px 16px;
 }
 
-.calendar {
-	display: flexbox;	
-	margin-left: 800px;
-	color: violet;
-	
-}
 .cards {
  display: flex; 
  cursor: pointer; 
