@@ -15,9 +15,16 @@
 .bnt-search{	
 	margin-left: 10px;
 	width: max-content;
-	border: 1px solid rgba(109, 31, 31, 0.2);
+	border: 2px solid rgba(109, 31, 31, 0.2);
 	border-radius: 30px;
 	padding: 8px 16px;
+}
+
+.calendar {
+	display: flexbox;	
+	margin-left: 800px;
+	color: violet;
+	
 }
 .cards {
  display: flex; 
@@ -36,7 +43,7 @@
 
 .home h1 {
 	font-family: 'Roboto', sans-serif;
-	color: #FF385C;
+	color: rgb(243, 84, 113);
 	font-size: 28px;
 	font-weight: 700;
 	padding: 20px;
