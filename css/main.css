@@ -8,9 +8,30 @@
 	color: black;		
 }
 
+
+
+.btn-locations {
+	margin-bottom: 30px;
+}
+
+/* .btn-outline-danger a {
+	color: #e6727d;
+	border-color: #df8790;
+} */
+
 .cards {
  display: flex; 
- cursor: pointer;
+ cursor: pointer; 
+}
+
+.home a{
+	display: inline;
+	margin-left: 10px;
+}
+
+.home h6 {
+	margin-left: 15px;
+	margin-bottom: 20px;
 }
 
 .home h1 {
@@ -43,6 +64,12 @@
 	width: 290px;
 	object-fit: cover;
 	margin: 0 10px 10px 20px;
+}
+
+.home .cards .list-cards img:hover{ 
+-webkit-box-shadow: 7px 6px 15px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 6px 15px -7px rgba(0,0,0,0.75);
+    box-shadow: 7px 6px 15px -7px rgba(0,0,0,0.75);
 }
 
 .home .cards .list-cards h2{
@@ -98,7 +125,7 @@ a.info:hover {
 }
 
 .contact li a{
-	color: white;
+	color: black;
 	text-decoration: none;
 }
 
@@ -108,8 +135,8 @@ a.info:hover {
 
 .bg-footer {
 margin-top: 100px;
-background-color: rgb(49, 45, 45);
-color: white;
+background-color: rgb(236, 233, 233);
+color: black;
 padding: 30px;
 }
 

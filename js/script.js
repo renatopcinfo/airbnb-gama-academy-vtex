@@ -1,13 +1,17 @@
 const api = 'https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72';
+let info = [];
 
 fetch(api)
   .then(response => response.json())
   .then(data => {
-    return getPhotos(data);
+    getPhotos(data);
+    info = data
+    return info
   })
-  .catch(error => console.error(error))
+  .catch(err => console.error('algo deu errado', err));
 
-function getPhotos(places) {
+
+const getPhotos = (places) => {
 
   let renderPhotos = [];
   for (
@@ -22,6 +26,62 @@ function getPhotos(places) {
   document.querySelector('.cards').innerHTML = renderPhotos;
 
 }
+
+function sortDataAZ() {
+  info.sort(function (a, b) {
+    return a.name > b.name ? 1 : b.name > a.name ? -1 : 0;
+  });
+  getPhotos(info)
+  //console.log('Dados Ordenados', info)
+}
+
+function sortDataZA() {
+  info.sort(function (a, b) {
+    return a.name < b.name ? 1 : b.name < a.name ? -1 : 0;
+  });
+  getPhotos(info);
+  //console.log('Dados Ordenados', info)
+}
+
+function sortDataType() {
+  info.sort(function (a, b) {
+    return a.property_type > b.property_type
+      ? 1
+      : b.property_type > a.property_type
+        ? -1
+        : 0;
+  });
+  getPhotos(info);
+}
+
+function sortDataPriceMin() {
+  info.sort(function (a, b) {
+    return a.price > b.price ? 1 : b.price > a.price ? -1 : 0;
+  });
+  getPhotos(info);
+}
+
+function sortDataPriceMax() {
+  info.sort(function (a, b) {
+    return a.price < b.price ? 1 : b.price < a.price ? -1 : 0;
+  });
+  getPhotos(info);
+}
+
+function handleSearch() {
+  let valueInput = document.querySelector("#searchInput").value;
+
+  const filteredResults = info.filter((places) => {
+    const sortDataSearchName = places.name;
+
+    if (sortDataSearchName.search(valueInput) > -1) {
+      return places;
+    }
+  });
+
+  getPhotos(filteredResults);
+}
+
 
 
 

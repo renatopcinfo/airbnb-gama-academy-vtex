@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Clone AirBnb - Hiring Coders</title>
+  <title>Clone AirBnb - Hiring Coders - Gama Academy</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" href="../css/normalize.css" />
@@ -33,21 +33,26 @@
             <a class="nav-link menu" href="#">Ajuda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link menu" href="#">Entrar</a>
+            <a class="nav-link menu personal_nav" href="#">Entrar</a>
           </li>
           <li class="nav-item menu">
-            <a class="nav-link menu" href="#">Cadastra-se</a>
+            <a class="btn btn-light my-2 my-sm-0" type="submit">Cadastra-se</a>
           </li>
         </ul>
     </nav>
 
-    <div class="sort__orders">
-      <button class="sort__orders--btn" onclick="sortNameAZ()">
-        A-Z</button>
-    </div>
-
     <section class="home">
       <h1>Quartos Airbnb</h1>
+      <div class="btn-locations">
+        <h6>Mais visitados:</h6>
+        <a class="btn btn-outline-danger rounded-pill" onclick="sortDataAZ()">AZ</a>
+        <a class="btn btn-outline-danger rounded-pill" onclick="sortDataZA()">ZA</a>
+        <a class="btn btn-outline-danger rounded-pill" onclick="sortDataType()">Tipo</a>
+        <a class="btn btn-outline-danger rounded-pill" onclick="sortDataPriceMin()">Menor Valor</a>
+        <a class="btn btn-outline-danger rounded-pill" onclick="sortDataPriceMax()">Maior Valor</a>
+        <input id="searchInput" class="info__orders--button" onkeyup="handleSearch()" placeholder="Pesquise seu imóvel">
+
+      </div>
       <div class="cards">
       </div>
     </section>
