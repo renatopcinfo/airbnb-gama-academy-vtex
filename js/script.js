@@ -17,7 +17,7 @@ const getPhotos = (places) => {
   for (
     var i = 0; i < places.length; i++) {
     renderPhotos += '<div class="list-cards">'
-    renderPhotos += `<img src='${places[i].photo}' alt="${places[i].name}"`;
+    renderPhotos += `<img src='${places[i].photo.replace(/xx_large|x_large/g, "x_medium")}' alt="${places[i].name}"`;
     renderPhotos += `<p class="type"> ${places[i].property_type} </p>`;
     renderPhotos += `<h2> ${places[i].name.toLowerCase()} </h2>`;
     renderPhotos += `<p><span> R$${places[i].price},00 </span></p>`;
