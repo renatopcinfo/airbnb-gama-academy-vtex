@@ -7,3 +7,6 @@ O desafio consiste em criar uma página similar a do Airbnb através do consumo 
 - Imagem
 - Tipo de propriedade
 - Preço
+
+## Link página
+https://airbnb-gama-desafio.netlify.app/
