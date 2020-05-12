@@ -1,6 +1,10 @@
 const api = 'https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72';
 let info = [];
 
+let currentPage = 1;
+
+const ITEMS_PER_PAGE = 8;
+
 fetch(api)
   .then(response => response.json())
   .then(data => {
@@ -9,6 +13,7 @@ fetch(api)
     return info
   })
   .catch(err => console.error('algo deu errado', err));
+
 
 
 const getPhotos = (places) => {
@@ -69,10 +74,10 @@ function sortDataPriceMax() {
 }
 
 function handleSearch() {
-  let valueInput = document.querySelector("#searchInput").value;
+  let valueInput = document.querySelector("#searchInput").value.toLowerCase();
 
   const filteredResults = info.filter((places) => {
-    const sortDataSearchName = places.name;
+    const sortDataSearchName = places.name.toLowerCase();
 
     if (sortDataSearchName.search(valueInput) > -1) {
       return places;
